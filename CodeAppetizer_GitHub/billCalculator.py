@@ -3,10 +3,16 @@
 # TODO - Read this code and fix it.
 # (Part 1): Fix any bugs and make it work!
 
-bill = raw_input("How much was your bill?")
+bill = int(float(raw_input("How much was your bill?"))*100)
+
+print "Bill", bill
 
 tip = bill * .18
 
-total_bill = bill + tip
+print "Tip", tip
 
-print "The tip is %f and the total bill is %f ." % (tip, total_bill)
+total_bill = (bill + tip)/100
+
+print "total bill",total_bill
+
+print "The tip is %s and the total bill is %s." % (tip, total_bill)
